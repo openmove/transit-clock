@@ -36,9 +36,7 @@ curl -X POST "http://localhost:3020/api/v1/key/{generated-key}/agency/TT/command
             assignmentId: 4321, 
             assignmentType: TRIP_ID
            }
-          ]
-         }
-        }'
+          ]}'
 ```
 - speed, heading, assignmentId and assignmentType are optional.
 - assignmentType can be BLOCK_ID, ROUTE_ID, TRIP_ID, or TRIP_SHORT_NAME.
