@@ -22,6 +22,27 @@ The start script will:
 The API is available at `http://localhost:3020/api`  
 The Web interface is at `http://localhost:3020/web`
 
+### Example
+
+```
+curl -X POST "http://localhost:3020/api/command/pushAvl"  -H "Content-Type: application/json" \ 
+-d '{avl: [{v: "vehicleId1", 
+            t: epochTimeMsec, 
+            lat: 46.07153531617033, 
+            lon: 11.127740289079219,
+            s: 20, 
+            h: 90, 
+            assignmentId: 4321, 
+            assignmentType: TRIP_ID
+           }
+          ]
+         }
+        }'
+```
+- speed, heading, assignmentId and assignmentType are optional.
+- assignmentType can be BLOCK_ID, ROUTE_ID, TRIP_ID, or TRIP_SHORT_NAME.
+
+
 ## License
 
 [MIT](LICENSE)
