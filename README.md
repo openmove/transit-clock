@@ -27,13 +27,13 @@ The API is available at `http://localhost:3020/api`
 curl -X POST "http://localhost:3020/api/v1/key/{generated-key}/agency/TT/command/pushAvl" \
 -H "Content-Type: application/json" \ 
 -d '{avl: [{v: "vehicleId1", 
-            t: epochTimeMsec, 
+            t: 1616519450000, 
             lat: 46.07153531617033, 
             lon: 11.127740289079219,
             s: 20, 
             h: 90, 
-            assignmentId: 4321, 
-            assignmentType: TRIP_ID
+            assignmentId: "4321", 
+            assignmentType: "TRIP_ID"
            }
           ]}'
 ```
