@@ -17,7 +17,7 @@ The start script will:
 - create database tables for each transit agency, 
 - load the gtfs data into the database, 
 - create an API key, 
-- and deploy the API + Web service.
+- and deploy the API service.
 
 The API is available at `http://localhost:3020/api`  
 
