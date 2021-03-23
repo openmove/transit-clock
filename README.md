@@ -25,7 +25,7 @@ The Web interface is at `http://localhost:3020/web`
 ### Example
 
 ```
-curl -X POST "http://localhost:3020/api/command/pushAvl"  -H "Content-Type: application/json" \ 
+curl -X POST "http://localhost:3020/api/v1/key/{generated-key}/agency/TT/command/pushAvl"  -H "Content-Type: application/json" \ 
 -d '{avl: [{v: "vehicleId1", 
             t: epochTimeMsec, 
             lat: 46.07153531617033, 
