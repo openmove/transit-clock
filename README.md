@@ -1,7 +1,8 @@
 # OpenMove TransitClock
 
-This is based on Cyberscape transitclock repository:
-https://github.com/cscape/interchange
+This is based on Cyberscape TransitClock automated [installer](https://github.com/cscape/interchange).
+
+For further information see [TheTransitClock](https://github.com/TheTransitClock/transitime) repository.
 
 ### Running
 
