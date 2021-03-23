@@ -20,7 +20,6 @@ The start script will:
 - and deploy the API + Web service.
 
 The API is available at `http://localhost:3020/api`  
-The Web interface is at `http://localhost:3020/web`
 
 ### Example
 
