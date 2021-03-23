@@ -43,6 +43,13 @@ curl -X POST "http://localhost:3020/api/v1/key/{generated-key}/agency/TT/command
 - speed, heading, assignmentId and assignmentType are optional.
 - assignmentType can be BLOCK_ID, ROUTE_ID, TRIP_ID, or TRIP_SHORT_NAME.
 
+Then you can retrieve GTFS-RT tripUpdates generated with:
+
+```
+curl http://localhost:3020/api/v1/key/{generated-key}/agency/TT/command/gtfs-rt/tripUpdates?format=human
+```
+
+For further information go to [TransitClock Wiki](https://github.com/Transitime/core/wiki/API)
 
 ## License
 
