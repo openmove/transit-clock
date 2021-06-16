@@ -5,7 +5,7 @@ ENV TRANSITCLOCK_LOGS /usr/local/transitclock/logs/
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH="${CATALINA_HOME}/bin:/usr/local/transitclock/bin:${PATH}"
 ENV TOMCAT_MAJOR 8
-ENV TOMCAT_VERSION 8.5.61
+ENV TOMCAT_VERSION 8.5.68
 ENV TOMCAT_TGZ_URL https://www-us.apache.org/dist/tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz
 
 RUN apt-get update
@@ -24,7 +24,7 @@ WORKDIR /
 RUN mkdir /usr/local/transitclock
 WORKDIR /usr/local/transitclock
 ADD . /usr/local/transitclock
-RUN mkdir db cache logs data gtfs
+RUN mkdir -p db cache logs data gtfs
 
 RUN curl -s https://api.github.com/repos/TheTransitClock/transitime/releases/latest | jq -r ".assets[].browser_download_url" | grep 'Core.jar\|api.war\|web.war' | xargs -L1 wget
 
